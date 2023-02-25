@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221229 21:36:02.324" rpa="false" schemaversion="3">
+<suite id="s1" name="Frame" source="C:\Users\soura\OneDrive\Desktop\Python Code\frames.robot\frame.robot">
+<test id="s1-t1" name=" Handling_frames" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221229 21:36:02.969" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
+<status status="PASS" starttime="20221229 21:36:02.969" endtime="20221229 21:36:17.712"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221229 21:36:17.716" endtime="20221229 21:36:17.886"/>
+</kw>
+<kw name="Frames_" library="frame1">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221229 21:36:17.893" endtime="20221229 21:36:17.894"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221229 21:36:17.895" level="INFO">Selecting frame 'packageListFrame'.</msg>
+<status status="PASS" starttime="20221229 21:36:17.894" endtime="20221229 21:36:22.001"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221229 21:36:22.001" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20221229 21:36:22.001" endtime="20221229 21:36:28.131"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221229 21:36:28.131" endtime="20221229 21:36:30.135"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221229 21:36:30.136" level="INFO">Selecting frame 'packageFrame'.</msg>
+<status status="PASS" starttime="20221229 21:36:30.135" endtime="20221229 21:36:34.170"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Alert</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221229 21:36:34.171" level="INFO">Clicking link 'Alert'.</msg>
+<status status="PASS" starttime="20221229 21:36:34.171" endtime="20221229 21:36:40.276"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221229 21:36:40.276" endtime="20221229 21:36:42.280"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221229 21:36:42.280" level="INFO">Selecting frame 'classFrame'.</msg>
+<status status="PASS" starttime="20221229 21:36:42.280" endtime="20221229 21:36:46.309"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Tree</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221229 21:36:46.309" level="INFO">Clicking link 'Tree'.</msg>
+<status status="PASS" starttime="20221229 21:36:46.309" endtime="20221229 21:36:53.168"/>
+</kw>
+<status status="PASS" starttime="20221229 21:36:17.891" endtime="20221229 21:36:53.168"/>
+</kw>
+<status status="PASS" starttime="20221229 21:36:02.968" endtime="20221229 21:36:53.169"/>
+</test>
+<status status="PASS" starttime="20221229 21:36:02.326" endtime="20221229 21:36:53.171"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Frame">Frame</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
